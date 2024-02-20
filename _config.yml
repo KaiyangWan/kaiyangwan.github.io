@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Kaiyang Wan"
-description              : "Undergraduate student major in Computer Science & Technology. \nResearch interests include Knowledge Graph, NLP, and Large Language Model."
+# description              : "Undergraduate student major in Computer Science & Technology. \nResearch interests include Knowledge Graph, NLP, and Large Language Model."
 repository               : "kaiyangwan/kaiyangwan.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  : #code-ZxFK3f4pfb
 author:
   name             : "Kaiyang Wan"
   avatar           : "images/wky.jpg"
-  bio              : "School of Computer Science, BUPT"
+  bio              : "Undergraduate student major in Computer Science & Technology from School of Computer Science, BUPT"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
