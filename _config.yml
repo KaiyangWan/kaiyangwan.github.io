@@ -6,30 +6,30 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Haoran Luo"
-description              : "Ph.D. Student major in Computer Science & Technology. Focusing on Knowledge Graph, NLP, & Large Language Model."
-repository               : "LHRLAB/lhrlab.github.io"
+title                    : "Kaiyang Wan"
+description              : "Undergraduate student major in Computer Science & Technology. Research interests include Knowledge Graph, NLP, and Large Language Model."
+repository               : "kaiyangwan/kaiyangwan.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : 283511074
+# google_analytics_id      : 283511074
 
-# SEO Related
-google_site_verification : UsawEcchrM_9IapJkdvUmO5mwyXrsuaXCPPz5538mWA
-bing_site_verification   : #B5AA590E7B9C03956A6F7DEC0F776211
-baidu_site_verification  : #code-ZxFK3f4pfb
+# # SEO Related
+# google_site_verification : UsawEcchrM_9IapJkdvUmO5mwyXrsuaXCPPz5538mWA
+# bing_site_verification   : #B5AA590E7B9C03956A6F7DEC0F776211
+# baidu_site_verification  : #code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Haoran Luo"
-  avatar           : "images/lhr_profile.jpg"
+  name             : "Kaiyang Wan"
+  # avatar           : "images/lhr_profile.jpg"
   bio              : "School of Computer Science, BUPT"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Q9Nv9mcAAAAJ"
-  email            : "luohaoran@bupt.edu.cn"
-  researchgate     : "https://www.researchgate.net/profile/Haoran-Luo-6"
+  email            : "wky123@bupt.edu.cn"
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -37,15 +37,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "LHRLAB"
+  github           : "kaiyangwan"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : #"rayeren"
-  dblp             : "https://dblp.org/pid/227/5902.html"
-  orcid            : "https://orcid.org/0000-0003-2727-0361"
+  dblp             : "https://dblp.org/pid/324/4644.html"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
