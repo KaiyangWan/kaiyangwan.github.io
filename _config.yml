@@ -7,17 +7,17 @@
 
 # Site Settings
 title                    : "Kaiyang Wan"
-description              : "Undergraduate student major in Computer Science & Technology. Research interests include Knowledge Graph, NLP, and Large Language Model."
+description              : "Undergraduate student major in Computer Science & Technology. \nResearch interests include Knowledge Graph, NLP, and Large Language Model."
 repository               : "kaiyangwan/kaiyangwan.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
 # google_analytics_id      : 283511074
 
-# # SEO Related
-# google_site_verification : UsawEcchrM_9IapJkdvUmO5mwyXrsuaXCPPz5538mWA
-# bing_site_verification   : #B5AA590E7B9C03956A6F7DEC0F776211
-# baidu_site_verification  : #code-ZxFK3f4pfb
+# SEO Related
+google_site_verification : UsawEcchrM_9IapJkdvUmO5mwyXrsuaXCPPz5538mWA
+bing_site_verification   : #B5AA590E7B9C03956A6F7DEC0F776211
+baidu_site_verification  : #code-ZxFK3f4pfb
 
 # Site Author
 author:
