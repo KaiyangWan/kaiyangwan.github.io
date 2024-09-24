@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xiuying Chen"
+title                    : "Kaiyang Wan"
 description              : " "
-repository               : "iriscxy/iriscxy.github.io"
+repository               : "https://github.com/KaiyangWan"
 google_scholar_stats_use_cdn : true
 
 
@@ -17,14 +17,14 @@ google_scholar_stats_use_cdn : true
 
 # Site Author
 author:
-  name             : "Xiuying Chen"
-  avatar           : "images/android-chrome-512x512.png"
+  name             : "Kaiyang Wan"
+  avatar           : "images/wky.png"
   # bio              : "KAUST"
   location         : "UAE"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=COUnAF4AAAAJ&hl=en"
-  email            : "xiuying.chen@mbzuai.ac.ae"
+  googlescholar    : "https://scholar.google.com/citations?user=v_faxAsAAAAJ"
+  email            : "wky123@bupt.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -33,7 +33,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "iriscxy"
+  github           : "kaiyangwan"
   google_plus      :
   keybase          :
   instagram        :
