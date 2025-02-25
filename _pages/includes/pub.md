@@ -1,5 +1,5 @@
 
-# Selected Publications 
+# Research Experience 
 ## Knowledge Graphs
 
 - ``NeurIPS 2024`` [Text2NKG: Fine-Grained N-ary Relation Extraction for N-ary relational Knowledge Graph Construction](https://arxiv.org/abs/2310.05185), Haoran Luo, Haihong E, Yuhao Yang, Tianyu Yao, Yikai Guo, Zichen Tang, Wentai Zhang, Shiyao Peng, **Kaiyang Wan**, Meina Song, Wei Lin, Yifan Zhu, Luu Anh Tuan
