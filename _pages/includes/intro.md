@@ -1,4 +1,4 @@
-My name is Kaiyang Wan, and I'm a Research Associate in the Natural Language Processing Department at MBZUAI now, supervised by [Prof. Xiuying Chen](https://iriscxy.github.io/).
+My name is Kaiyang Wan, and I am currently a Research Associate in the Natural Language Processing Department at MBZUAI, where I am fortunate and honored to be supervised by [Prof. Xiuying Chen](https://iriscxy.github.io/).
 <!-- <img src='./images/bupt.png' style='width: 6em;'> -->
 
 My research interest includes **Natural Language Processing**, **Large Language Models**, and **Knowledge Graphs**.
