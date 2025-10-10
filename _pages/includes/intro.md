@@ -1,3 +1,3 @@
-My name is Kaiyang Wan, and I am an incoming PhD student at [INSAIT](https://insait.ai/), where I am fortunate to be supervised by Dr. [Yuxia Wang](https://yuxiaw.github.io/), a truly supportive and empathy mentor.
+My name is Kaiyang Wan, and I am an incoming PhD student at [INSAIT](https://insait.ai/), where I am fortunate to be supervised by Dr. [Yuxia Wang](https://yuxiaw.github.io/), an exceptionally supportive and empathetic mentor. She fosters a space that encourages curiosity and creativity, where guidance combines academic rigor with personal growth, a spirit of genuine exploration, and a deep love for science and research.
 
-My research interest includes **Agents**, **Natural Language Processing**, and **Large Language Models**.
+I study **multi-objective optimization (MOO)** to build effective and adaptive **multi-agent systems (MAS)** with **large language models (LLMs)** for complex **natural language processing (NLP)** problems.
