@@ -1,4 +1,4 @@
-# Educations & Experience
+# Educations & Experiences
 - *2020.09 - 2024.06*: Undergraduate, School of Computer Science, Beijing University of Posts and Telecommunications, Beijing.
 - *2024.09 - 2025.09*: Research Associate, Natural Language Processing Department, MBZUAI, Abu Dhabi, supervised by [Dr. Xiuying Chen](https://iriscxy.github.io/).
 
