@@ -1,6 +1,6 @@
 
 # Research Experience 
-- ``Preprint`` [A Fano-Style Accuracy Upper Bound for LLM Single-Pass Reasoning in Multi-Hop QA](https://arxiv.org/pdf/2509.21199?), **Kaiyang Wan**, Lang Gao, Honglin Mu, Preslav Nakov, Yuxia Wang, Xiuying Chen
+- ``ICLR 2026`` [A Fano-Style Accuracy Upper Bound for LLM Single-Pass Reasoning in Multi-Hop QA](https://arxiv.org/pdf/2509.21199?), **Kaiyang Wan**, Lang Gao, Honglin Mu, Preslav Nakov, Yuxia Wang, Xiuying Chen
 
 - ``Preprint`` [Evaluate Bias without Manual Test Sets: A Concept Representation Perspective for LLMs](https://arxiv.org/pdf/2505.15524), Lang Gao, **Kaiyang Wan**, Wei Liu, Chenxi Wang, Zirui Song, Zixiang Xu, Yanbo Wang, Veselin Stoyanov, Xiuying Chen
 
