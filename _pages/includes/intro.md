@@ -1,3 +1,3 @@
 My name is Kaiyang Wan, and I am a PhD student at [INSAIT](https://insait.ai/), where I am fortunate to be supervised by Dr. [Yuxia Wang](https://yuxiaw.github.io/), an exceptionally supportive and empathetic mentor. She fosters a space that encourages curiosity and creativity, where guidance combines academic rigor with personal growth, a spirit of genuine exploration, and a deep love for science and research, just like my precious supervisor [Dr. Xiuying Chen](https://iriscxy.github.io/) at MBZUAI.
 
-I study the limits of single-model intelligence, spanning capacity, readout, and cognitive process bottlenecks, and how to overcome them via improved mechanisms and multi-agent systems.
+I’m interested in understanding and improving LLMs and LLM-based agentic systems for NLP from first principles.
