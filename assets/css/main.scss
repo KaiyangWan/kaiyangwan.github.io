@@ -1,109 +1,313 @@
 ---
 ---
+// Palette: warm paper, deep INSAIT navy, a restrained antique-gold hairline.
+$paper: #faf8f3;
+$ink: #1c2230;
+$muted: #5b6170;
+$accent: #1f3a64;
+$accent-dark: #12264a;
+$gold: #a8894f;
+$gold-text: #8a6d36;
+$line: #e2dccf;
+$line-soft: #ece7dc;
+$width: 880px;
 
-/*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
+$serif: "EB Garamond", "Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+$display: "Cormorant Garamond", "EB Garamond", Garamond, "Palatino Linotype", Georgia, serif;
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
+@mixin caps($size: 0.74rem, $tracking: 0.14em) {
+  font-size: $size;
+  font-weight: 500;
+  letter-spacing: $tracking;
+  text-transform: uppercase;
+  font-variant-numeric: lining-nums;
+}
 
-@import "reset";
-@import "base";
+* { box-sizing: border-box; }
 
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
 
-@import "forms";
+body {
+  margin: 0;
+  color: $ink;
+  background: $paper;
+  font-family: $serif;
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 1.62;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
 
-@import "page";
-@import "archive";
-@import "sidebar";
+::selection { background: rgba($accent, 0.14); }
 
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
+a {
+  color: $accent;
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 
-.paper-box {
+  &:hover { color: $accent-dark; text-decoration-color: currentColor; }
+  &:focus-visible { outline: 1px solid $accent; outline-offset: 4px; }
+}
+
+img { max-width: 100%; }
+p { margin: 0 0 0.75rem; }
+strong { font-weight: 600; }
+h1, h2, h3, h4 { color: $ink; line-height: 1.25; font-weight: 500; }
+h1 { margin: 0 0 0.6rem; font-family: $display; font-size: 3.3rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.05; }
+h2 { margin: 0 0 1.6rem; font-family: $display; font-size: 2rem; font-weight: 500; }
+h3 { margin: 1.9rem 0 0.5rem; font-size: 1.2rem; }
+h4 { margin: 0; font-size: 1.1rem; }
+section, #main { scroll-margin-top: 5.5rem; }
+
+.skip-link {
+  position: absolute;
+  z-index: 30;
+  top: -5rem;
+  left: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: $paper;
+  &:focus { top: 0.5rem; }
+}
+
+// Header
+
+.site-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background: rgba($paper, 0.92);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $line;
+}
+
+.site-header-inner {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 1.05rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+
+  a { color: $ink; text-decoration: none; }
+  a:hover { color: $accent; }
+
+  nav ul {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
-
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
-    }
-    
-    .paper-box-text{
-        max-width: 50%;
-        order: 1;
-    }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
-
-    }
-
-
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include caps(0.72rem, 0.16em);
+  }
 }
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
+.site-name {
+  font-family: $display;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
-.badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+// Hero
+
+.profile-main {
+  width: calc(100% - 4rem);
+  max-width: $width;
+  margin: 0 auto;
+  padding: 4.25rem 0 0;
+}
+
+.profile-hero {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  column-gap: 3.5rem;
+  row-gap: 1.6rem;
+  padding-bottom: 3.5rem;
+}
+
+.profile-identity { grid-column: 2; }
+.profile-role {
+  margin-bottom: 0.9rem;
+  color: $accent;
+  @include caps(0.78rem, 0.15em);
+}
+.profile-role a { color: inherit; text-decoration: none; }
+.profile-role a:hover { text-decoration: underline; }
+.profile-intro { max-width: 60ch; margin: 0; color: $muted; font-style: italic; font-size: 1.04rem; }
+
+.profile-photo {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: block;
+  width: 168px;
+  height: auto;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid $line;
+  box-shadow: 0 1px 2px rgba($ink, 0.04), 0 10px 28px -14px rgba($ink, 0.28);
+}
+
+.profile-summary { grid-column: 2; }
+.research-statement {
+  max-width: 54ch;
+  margin-bottom: 1.5rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid $gold;
+  font-family: $display;
+  font-size: 1.42rem;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.98rem;
+
+  li + li::before {
+    content: "·";
+    margin: 0 0.75rem;
+    color: $gold;
+  }
+}
+
+// Sections
+
+.profile-section {
+  margin-bottom: 3.75rem;
+}
+
+.profile-section > h2 {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, $gold, rgba($gold, 0.35) 30%, $line);
+  }
+}
+
+.research-stage { margin-bottom: 2.4rem; }
+.research-stage h3 {
+  margin-top: 0;
+  font-size: 1.32rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.section-intro { max-width: 70ch; color: $muted; font-size: 1rem; }
+
+.publication-list { padding: 0; margin: 1.35rem 0 0; list-style: none; }
+.publication { margin: 0 0 1.6rem; }
+.publication + .publication { border-top: 1px solid $line-soft; padding-top: 1.6rem; }
+.publication-venue { margin: 0 0 0.35rem; color: $gold-text; @include caps(0.7rem, 0.15em); font-weight: 600; }
+.publication-title { margin: 0 0 0.4rem; max-width: 62ch; font-family: $display; font-size: 1.38rem; font-weight: 600; line-height: 1.25; }
+.publication-title a { color: $ink; text-decoration: none; }
+.publication-title a:hover { color: $accent; text-decoration: underline; text-decoration-color: rgba($accent, 0.4); }
+.publication-authors { color: $muted; font-size: 0.95rem; line-height: 1.55; margin-bottom: 0.65rem; }
+.publication-authors strong { color: $ink; font-weight: 600; }
+.publication-summary { max-width: 72ch; font-size: 1rem; line-height: 1.62; margin-bottom: 0.45rem; }
+.publication-summary strong { color: $accent; font-style: italic; font-weight: 500; }
+.publication-resources { margin: 0; @include caps(0.7rem, 0.14em); }
+.publication-list-compact .publication { margin-bottom: 1.15rem; }
+.publication-list-compact .publication + .publication { padding-top: 1.15rem; }
+.publication-list-compact .publication-title { font-size: 1.18rem; font-weight: 600; }
+.publication-list-compact .publication-authors { margin-bottom: 0; }
+
+.research-next {
+  max-width: none;
+  margin: 0;
+  padding: 1.25rem 1.6rem;
+  background: rgba(#fff, 0.65);
+  border: 1px solid $line;
+  border-left: 2px solid $gold;
+  color: $ink;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.55;
+
+  strong { color: $accent; font-style: normal; @include caps(0.78rem, 0.15em); margin-right: 0.4rem; }
+}
+
+// Experience
+
+.profile-section h3:not(.publication-title) + .experience-list { margin-top: 0.8rem; }
+#experience > h3 { margin-top: 0; color: $accent; @include caps(0.74rem, 0.16em); }
+.experience-list { margin: 1rem 0 2.2rem; }
+.experience-entry { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 1.5rem; margin-bottom: 1.25rem; }
+.experience-entry dt { padding-top: 0.05rem; color: $muted; font-style: italic; font-size: 0.98rem; }
+.experience-entry dd { margin: 0; font-size: 1rem; }
+.experience-entry dd strong { font-weight: 600; }
+.experience-note { color: $muted; font-style: italic; font-size: 0.95rem; }
+
+// Footer
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: calc(100% - 4rem);
+  max-width: $width;
+  margin: 1rem auto 0;
+  padding: 1.5rem 0 2.5rem;
+  border-top: 1px solid $line;
+  color: $muted;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+.site-footer p { margin: 0; }
+
+@media (max-width: 944px) {
+  .site-header-inner { width: calc(100% - 4rem); }
+}
+
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+  .site-header-inner { width: calc(100% - 2.5rem); flex-wrap: wrap; padding: 0.8rem 0; gap: 0.3rem; }
+  .site-header-inner nav { width: 100%; }
+  .site-header-inner nav ul { gap: 1.25rem; }
+  .profile-main, .site-footer { width: calc(100% - 2.5rem); }
+  .profile-main { padding-top: 2.2rem; }
+  .profile-hero { grid-template-columns: 92px minmax(0, 1fr); gap: 1.3rem; padding-bottom: 2.4rem; }
+  .profile-photo { grid-column: 1; grid-row: 1; width: 92px; padding: 4px; }
+  .profile-summary { grid-column: 1 / -1; }
+  h1 { font-size: 2.45rem; }
+  h2 { font-size: 1.7rem; }
+  .research-statement { font-size: 1.25rem; }
+  .profile-links { font-size: 0.95rem; }
+  .profile-section { margin-bottom: 2.75rem; }
+  .publication-title { font-size: 1.25rem; }
+  .publication-list-compact .publication-title { font-size: 1.1rem; }
+  .experience-entry { grid-template-columns: 1fr; gap: 0.15rem; }
+  .site-footer { flex-wrap: wrap; }
+}
+
+@media print {
+  body { font-size: 10.5pt; color: #000; background: #fff; }
+  .site-header, .skip-link, .site-footer { display: none; }
+  .profile-main { width: 100%; padding-top: 0; }
+  .profile-hero { padding-bottom: 1rem; }
+  .profile-photo { box-shadow: none; }
+  .profile-section { margin-bottom: 1rem; }
+  .publication { break-inside: avoid; }
+  h2, h3, h4 { break-after: avoid; }
+  a { color: inherit; }
 }

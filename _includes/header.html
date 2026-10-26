@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-name" href="{{ '/' | relative_url }}">Kaiyang Wan</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        {% for link in site.navigation %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
