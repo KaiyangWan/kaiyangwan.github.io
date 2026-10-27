@@ -8,6 +8,7 @@ $accent: #1f3a64;
 $accent-dark: #12264a;
 $gold: #a8894f;
 $gold-text: #8a6d36;
+$gold-heading: #9a7430;
 $line: #e2dccf;
 $line-soft: #ece7dc;
 $width: 880px;
@@ -63,7 +64,7 @@ p { margin: 0 0 0.75rem; }
 strong { font-weight: 600; }
 h1, h2, h3, h4 { color: $ink; line-height: 1.25; font-weight: 500; }
 h1 { margin: 0 0 0.6rem; font-family: $display; font-size: 3.3rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.05; }
-h2 { margin: 0 0 1.6rem; font-family: $display; font-size: 2rem; font-weight: 500; }
+h2 { margin: 0 0 1.6rem; color: $gold-heading; font-family: $display; font-size: 2rem; font-weight: 600; letter-spacing: 0.01em; }
 h3 { margin: 1.9rem 0 0.5rem; font-size: 1.2rem; }
 h4 { margin: 0; font-size: 1.1rem; }
 section, #main { scroll-margin-top: 5.5rem; }
@@ -165,6 +166,7 @@ section, #main { scroll-margin-top: 5.5rem; }
   margin-bottom: 1.5rem;
   padding-left: 1.1rem;
   border-left: 2px solid $gold;
+  color: $ink;
   font-family: $display;
   font-size: 1.42rem;
   font-weight: 500;
