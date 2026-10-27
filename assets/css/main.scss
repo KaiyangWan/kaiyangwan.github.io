@@ -209,11 +209,21 @@ section, #main { scroll-margin-top: 5.5rem; }
 .research-stage { margin-bottom: 2.4rem; }
 .research-stage h3 {
   margin-top: 0;
-  font-size: 1.32rem;
-  font-style: italic;
-  font-weight: 400;
+  color: $accent-dark;
+  font-family: $display;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
-.section-intro { max-width: 70ch; color: $muted; font-size: 1rem; }
+.section-intro {
+  max-width: 64ch;
+  padding-left: 1rem;
+  border-left: 2px solid $gold;
+  color: $ink;
+  font-family: $display;
+  font-size: 1.24rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
 
 .publication-list { padding: 0; margin: 1.35rem 0 0; list-style: none; }
 .publication { margin: 0 0 1.6rem; }
@@ -240,9 +250,11 @@ section, #main { scroll-margin-top: 5.5rem; }
   border: 1px solid $line;
   border-left: 2px solid $gold;
   color: $ink;
+  font-family: $display;
   font-style: italic;
-  font-size: 1.2rem;
-  line-height: 1.55;
+  font-size: 1.32rem;
+  font-weight: 600;
+  line-height: 1.5;
 
   strong { color: $accent; font-style: normal; @include caps(0.78rem, 0.15em); margin-right: 0.4rem; }
 }
